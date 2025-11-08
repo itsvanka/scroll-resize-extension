@@ -1,0 +1,23 @@
+.scroll-resize-cur-el::before,
+.scroll-resize-cur-el::after{
+    height: 3px;
+    background-color: rgb(235, 235, 141);
+    width: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+    content: " ";
+    z-index: 999998;
+}
+
+:has(>.scroll-resize-cur-el)::before,
+:has(>.scroll-resize-cur-el)::after{
+    height: 2px;
+    background-color: rgb(206, 206, 124);
+    width: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+    content: " ";
+    z-index: 999999;
+}
